@@ -76,6 +76,13 @@ class Program
         //}
 
         #endregion
+
+
+        #region Task 7
+        string ad = "salam ";
+        Ters(ad);
+        #endregion
+
     }
 
 
@@ -173,11 +180,16 @@ class Program
     #endregion
 
     #region Task 7
-    //static string TersCevir (string word)
-    //{
-    //    char[] chars = word.ToCharArray();
-    //    Array.Reverse(chars);
-    //    return new string(chars);
-    //}
-    #endregion
+    static void Ters(string word)
+    {
+        for (int i = word.Length - 1; i >= 0; i--)
+        {
+            if (char.IsLetter(word[i]))
+
+            {
+                Console.Write(word[i]);
+            }
+        }
+        #endregion
+    }
 }
